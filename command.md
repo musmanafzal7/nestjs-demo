@@ -11,6 +11,9 @@ npm install @nestjs/typeorm typeorm sqlite3
 npm run start:dev
 
 
+npm install class-validator class-transformer; 
+
+
 
 --------
 echo "# nestjs-demo" >> README.md
