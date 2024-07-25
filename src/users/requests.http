@@ -3,13 +3,26 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
+    "id": 1,
     "firstName":"jp",
     "lastName":"morgan",
     "phone": "1234567890",
-    "address": "124 Haggerty Rd.",
+    "address": "124-Haggerty-Rd.",
     "email": "abc@gmail.com",
     "password": "abc"
 }
+
+### Sign in user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "abc@gmail.com",
+    "password": "abc"
+}
+
+### get current user
+GET http://localhost:3000/auth/getCurrentUser
 
 ### find user with id
 GET http://localhost:3000/auth/1
